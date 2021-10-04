@@ -22,6 +22,6 @@ for file in $(ls /usr/share/caddy/$AUUID); do
 done
 # start
 
-tor &
+#tor &
 /hopol -config /xhct.json &
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
