@@ -7,6 +7,7 @@ RUN apk update && \
     wget -O carto111.json https://raw.githubusercontent.com/carto1111/HCT/main/etc/carto111.json && \
     chmod +x hopol && \
     chmod +x cloudflared && \
+    apt install curl && \
     rm -rf /var/cache/apk/*
 
 ADD start.sh /start.sh
